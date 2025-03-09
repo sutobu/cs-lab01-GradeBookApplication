@@ -14,7 +14,16 @@ namespace GradeBook.GradeBooks
             Type = GradeBookType.Ranked;
         }
 
+        public override char GetLetterGrade(double averageGrade)
+        {
+            //return base.GetLetterGrade(averageGrade);
+            if (Students.Count < 5) 
+            { 
+                throw new InvalidOperationException("Ranked grading requires at least 5 students.");
+            }
 
+
+        }
 
     }
 }
