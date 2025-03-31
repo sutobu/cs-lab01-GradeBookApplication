@@ -1,6 +1,5 @@
 ﻿using GradeBook.GradeBooks;
 using System;
-using System.Runtime.Intrinsics.X86;
 
 namespace GradeBook.UserInterfaces
 {
@@ -65,6 +64,7 @@ namespace GradeBook.UserInterfaces
 
 
         }
+
 
         public static void LoadCommand(string command)
         {
